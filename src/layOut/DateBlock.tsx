@@ -12,6 +12,7 @@ type PickerPropsType = {
 const DateBlock: FC<PickerPropsType> = ({startDate, setStartDate}) => {
     return (
         <div>
+            <p className='mb-2'>Дата и время посещения</p>
             <DatePicker
                 selected={startDate}
                 onChange={(date: Date) => setStartDate(date)}
